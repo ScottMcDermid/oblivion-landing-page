@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import BookIcon from '@mui/icons-material/Book';
+import AddModeratorIcon from '@mui/icons-material/AddModerator';
 import theme from '@/app/theme';
 
 export default function Home() {
@@ -45,6 +46,15 @@ export default function Home() {
                 className="rounded-xl px-6 py-3"
               >
                 <FlashOnIcon /> Spell Altar
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                href="https://enchanting.oblivion.tools"
+                className="rounded-xl px-6 py-3"
+              >
+                <AddModeratorIcon /> Enchanting
               </Button>
             </Box>
           </Container>
