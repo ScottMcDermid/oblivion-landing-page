@@ -11,6 +11,7 @@ import {
 } from '@mui/material';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import BookIcon from '@mui/icons-material/Book';
+import ScienceIcon from '@mui/icons-material/Science';
 import AddModeratorIcon from '@mui/icons-material/AddModerator';
 import theme from '@/app/theme';
 
@@ -55,6 +56,15 @@ export default function Home() {
                 className="rounded-xl px-6 py-3"
               >
                 <AddModeratorIcon /> Enchanting
+              </Button>
+              <Button
+                variant="outlined"
+                color="primary"
+                size="large"
+                disabled
+                className="cursor-not-allowed rounded-xl px-6 py-3 opacity-70"
+              >
+                <ScienceIcon /> Alchemy
               </Button>
             </Box>
           </Container>
