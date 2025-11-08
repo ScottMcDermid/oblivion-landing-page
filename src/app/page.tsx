@@ -13,6 +13,7 @@ import FlashOnIcon from '@mui/icons-material/FlashOn';
 import BookIcon from '@mui/icons-material/Book';
 import ScienceIcon from '@mui/icons-material/Science';
 import AddModeratorIcon from '@mui/icons-material/AddModerator';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import theme from '@/app/theme';
 
 export default function Home() {
@@ -70,25 +71,36 @@ export default function Home() {
           </Container>
         </Box>
         <footer className="mt-16 w-full border-t border-gray-700 bg-neutral-900 px-6 py-8 text-sm text-gray-400">
-          <div className="mx-auto max-w-4xl space-y-2 text-center">
-            <p>Oblivion Tool Suite © 2025 Scott McDermid</p>
-            <p>
-              Licensed under the{' '}
-              <a
-                href="https://www.gnu.org/licenses/gpl-3.0.html"
-                className="underline hover:text-gray-200"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GNU General Public License v3.0
-              </a>
-              .
-            </p>
-            <p>
-              The Elder Scrolls and Oblivion are trademarks of Bethesda Softworks LLC, a ZeniMax
-              Media company.
-            </p>
-            <p>This site is fan-made and not affiliated with Bethesda.</p>
+          <div className="mx-auto flex max-w-4xl flex-col gap-4 text-center sm:flex-row sm:items-end sm:justify-between sm:text-left">
+            <div className="space-y-2">
+              <p>Oblivion Tool Suite © 2025 Scott McDermid</p>
+              <p>
+                Licensed under the{' '}
+                <a
+                  href="https://www.gnu.org/licenses/gpl-3.0.html"
+                  className="underline hover:text-gray-200"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GNU General Public License v3.0
+                </a>
+                .
+              </p>
+              <p>
+                The Elder Scrolls and Oblivion are trademarks of Bethesda Softworks LLC, a ZeniMax
+                Media company.
+              </p>
+              <p>This site is fan-made and not affiliated with Bethesda.</p>
+            </div>
+            <a
+              href="https://github.com/scottmcdermid/oblivion-landing-page"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-1 self-center rounded-full border border-gray-600 px-3 py-1 text-xs text-gray-300 transition hover:border-gray-400 hover:text-gray-100 sm:self-end"
+            >
+              <GitHubIcon fontSize="inherit" />
+              GitHub
+            </a>
           </div>
         </footer>
       </ThemeProvider>
