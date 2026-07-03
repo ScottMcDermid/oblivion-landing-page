@@ -59,11 +59,11 @@ export default function Home() {
                 <AddModeratorIcon /> Enchanting
               </Button>
               <Button
-                variant="outlined"
+                variant="contained"
                 color="primary"
                 size="large"
-                disabled
-                className="cursor-not-allowed rounded-xl px-6 py-3 opacity-70"
+                href="https://alchemy.oblivion.tools"
+                className="rounded-xl px-6 py-3"
               >
                 <ScienceIcon /> Alchemy
               </Button>
