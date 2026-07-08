@@ -13,6 +13,7 @@ import FlashOnIcon from '@mui/icons-material/FlashOn';
 import BookIcon from '@mui/icons-material/Book';
 import ScienceIcon from '@mui/icons-material/Science';
 import AddModeratorIcon from '@mui/icons-material/AddModerator';
+import ExploreIcon from '@mui/icons-material/Explore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import theme from '@/app/theme';
 
@@ -66,6 +67,15 @@ export default function Home() {
                 className="rounded-xl px-6 py-3"
               >
                 <ScienceIcon /> Alchemy
+              </Button>
+              <Button
+                variant="contained"
+                color="primary"
+                size="large"
+                href="https://wayshrine.oblivion.tools"
+                className="rounded-xl px-6 py-3"
+              >
+                <ExploreIcon /> Wayshrine
               </Button>
             </Box>
           </Container>
