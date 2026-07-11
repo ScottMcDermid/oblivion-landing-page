@@ -9,10 +9,6 @@ import {
   StyledEngineProvider,
   ThemeProvider,
 } from '@mui/material';
-import FlashOnIcon from '@mui/icons-material/FlashOn';
-import BookIcon from '@mui/icons-material/Book';
-import ScienceIcon from '@mui/icons-material/Science';
-import AddModeratorIcon from '@mui/icons-material/AddModerator';
 import ExploreIcon from '@mui/icons-material/Explore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import theme from '@/app/theme';
@@ -38,7 +34,7 @@ export default function Home() {
                 href="https://plan.oblivion.tools"
                 className="rounded-xl px-6 py-3"
               >
-                <BookIcon /> Level Planner
+                <img src="/icons/planner.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Level Planner
               </Button>
 
               <Button
@@ -48,7 +44,7 @@ export default function Home() {
                 href="https://spells.oblivion.tools"
                 className="rounded-xl px-6 py-3"
               >
-                <FlashOnIcon /> Spell Altar
+                <img src="/icons/spell-altar.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Spell Altar
               </Button>
               <Button
                 variant="contained"
@@ -57,7 +53,7 @@ export default function Home() {
                 href="https://enchanting.oblivion.tools"
                 className="rounded-xl px-6 py-3"
               >
-                <AddModeratorIcon /> Enchanting
+                <img src="/icons/enchanting.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Enchanting
               </Button>
               <Button
                 variant="contained"
@@ -66,7 +62,7 @@ export default function Home() {
                 href="https://alchemy.oblivion.tools"
                 className="rounded-xl px-6 py-3"
               >
-                <ScienceIcon /> Alchemy
+                <img src="/icons/alchemy.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Alchemy
               </Button>
               <Button
                 variant="contained"
@@ -75,7 +71,7 @@ export default function Home() {
                 href="https://wayshrine.oblivion.tools"
                 className="rounded-xl px-6 py-3"
               >
-                <ExploreIcon /> Wayshrine
+                <ExploreIcon sx={{ marginRight: 1 }} /> Wayshrine
               </Button>
             </Box>
           </Container>
