@@ -10,6 +10,7 @@ import {
   ThemeProvider,
 } from '@mui/material';
 import ExploreIcon from '@mui/icons-material/Explore';
+import WhatshotIcon from '@mui/icons-material/Whatshot';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import theme from '@/app/theme';
 
@@ -26,53 +27,65 @@ export default function Home() {
               A collection of tools to enhance your Elder Scrolls IV: Oblivion experience.
             </div>
 
-            <Box className="flex flex-col justify-center gap-4 sm:flex-row">
-              <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                href="https://plan.oblivion.tools"
-                className="rounded-xl px-6 py-3"
-              >
-                <img src="/icons/planner.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Level Planner
-              </Button>
-
-              <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                href="https://spells.oblivion.tools"
-                className="rounded-xl px-6 py-3"
-              >
-                <img src="/icons/spell-altar.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Spell Altar
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                href="https://enchanting.oblivion.tools"
-                className="rounded-xl px-6 py-3"
-              >
-                <img src="/icons/enchanting.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Enchanting
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                href="https://alchemy.oblivion.tools"
-                className="rounded-xl px-6 py-3"
-              >
-                <img src="/icons/alchemy.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Alchemy
-              </Button>
-              <Button
-                variant="contained"
-                color="primary"
-                size="large"
-                href="https://wayshrine.oblivion.tools"
-                className="rounded-xl px-6 py-3"
-              >
-                <ExploreIcon sx={{ marginRight: 1 }} /> Wayshrine
-              </Button>
+            <Box className="flex flex-col items-center gap-4">
+              <Box className="flex flex-col justify-center gap-4 sm:flex-row">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  href="https://spells.oblivion.tools"
+                  className="w-44 rounded-xl px-6 py-2"
+                >
+                  <img src="/icons/spell-altar.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Spell Altar
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  href="https://enchanting.oblivion.tools"
+                  className="w-44 rounded-xl px-6 py-2"
+                >
+                  <img src="/icons/enchanting.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Enchanting
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  href="https://alchemy.oblivion.tools"
+                  className="w-44 rounded-xl px-6 py-2"
+                >
+                  <img src="/icons/alchemy.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Alchemy
+                </Button>
+              </Box>
+              <Box className="flex flex-col justify-center gap-4 sm:flex-row">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  href="https://plan.oblivion.tools"
+                  className="w-44 rounded-xl px-6 py-2"
+                >
+                  <img src="/icons/planner.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Planner
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  href="https://damage.oblivion.tools"
+                  className="w-44 rounded-xl px-6 py-2"
+                >
+                  <WhatshotIcon sx={{ marginRight: 1 }} /> Damage Calc
+                </Button>
+                <Button
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  href="https://wayshrine.oblivion.tools"
+                  className="w-44 rounded-xl px-6 py-2"
+                >
+                  <ExploreIcon sx={{ marginRight: 1 }} /> Wayshrine
+                </Button>
+              </Box>
             </Box>
           </Container>
         </Box>
