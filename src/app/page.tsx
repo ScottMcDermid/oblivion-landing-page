@@ -9,7 +9,6 @@ import {
   StyledEngineProvider,
   ThemeProvider,
 } from '@mui/material';
-import ExploreIcon from '@mui/icons-material/Explore';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import theme from '@/app/theme';
 
@@ -82,7 +81,7 @@ export default function Home() {
                   href="https://wayshrine.oblivion.tools"
                   className="w-48 rounded-xl px-6 py-2"
                 >
-                  <ExploreIcon sx={{ marginRight: 1 }} /> Wayshrine
+                  <img src="/icons/wayshrine.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Wayshrine
                 </Button>
               </Box>
             </Box>
