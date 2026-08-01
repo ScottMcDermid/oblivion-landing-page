@@ -8,6 +8,7 @@ import {
   CssBaseline,
   StyledEngineProvider,
   ThemeProvider,
+  Typography,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { GiRunningShoe } from 'react-icons/gi';
@@ -26,76 +27,110 @@ export default function Home() {
               A collection of tools to enhance your Elder Scrolls IV: Oblivion experience.
             </div>
 
-            <Box className="flex flex-col items-center gap-4">
-              <Box className="flex flex-col justify-center gap-4 sm:flex-row">
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://spells.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2"
+            <Box className="flex flex-col items-center gap-8 w-full">
+
+              {/* Crafting */}
+              <Box className="flex flex-col items-center gap-3 w-full">
+                <Typography
+                  variant="overline"
+                  className="tracking-widest text-xs"
+                  sx={{ color: 'text.secondary', letterSpacing: '0.2em' }}
                 >
-                  <img src="/icons/spell-altar.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Spell Altar
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://enchanting.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2"
-                >
-                  <img src="/icons/enchanting.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Enchanting
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://alchemy.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2"
-                >
-                  <img src="/icons/alchemy.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Alchemy
-                </Button>
+                  Crafting
+                </Typography>
+                <Box className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://spells.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2"
+                  >
+                    <img src="/icons/spell-altar.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Spell Altar
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://enchanting.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2"
+                  >
+                    <img src="/icons/enchanting.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Enchanting
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://alchemy.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2"
+                  >
+                    <img src="/icons/alchemy.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Alchemy
+                  </Button>
+                </Box>
               </Box>
-              <Box className="flex flex-col justify-center gap-4 sm:flex-row">
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://plan.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2"
+
+              {/* Character */}
+              <Box className="flex flex-col items-center gap-3 w-full">
+                <Typography
+                  variant="overline"
+                  className="tracking-widest text-xs"
+                  sx={{ color: 'text.secondary', letterSpacing: '0.2em' }}
                 >
-                  <img src="/icons/planner.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Planner
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://damage.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2 whitespace-nowrap"
-                >
-                  <img src="/icons/damage.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Damage Calc
-                </Button>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://wayshrine.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2"
-                >
-                  <img src="/icons/wayshrine.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Wayshrine
-                </Button>
+                  Character
+                </Typography>
+                <Box className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://plan.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2"
+                  >
+                    <img src="/icons/planner.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Planner
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://damage.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2 whitespace-nowrap"
+                  >
+                    <img src="/icons/damage.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Damage Calc
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://speed.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2 whitespace-nowrap"
+                  >
+                    <GiRunningShoe style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8, fontSize: 24 }} /> Speed Calc
+                  </Button>
+                </Box>
               </Box>
-              <Box className="flex flex-col justify-center gap-4 sm:flex-row">
-                <Button
-                  variant="contained"
-                  color="primary"
-                  size="large"
-                  href="https://speed.oblivion.tools"
-                  className="w-48 rounded-xl px-6 py-2 whitespace-nowrap"
+
+              {/* Exploration */}
+              <Box className="flex flex-col items-center gap-3 w-full">
+                <Typography
+                  variant="overline"
+                  className="tracking-widest text-xs"
+                  sx={{ color: 'text.secondary', letterSpacing: '0.2em' }}
                 >
-                  <GiRunningShoe style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8, fontSize: 24 }} /> Speed Calc
-                </Button>
+                  Exploration
+                </Typography>
+                <Box className="flex flex-col justify-center gap-4 sm:flex-row">
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://wayshrine.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2"
+                  >
+                    <img src="/icons/wayshrine.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Wayshrine
+                  </Button>
+                </Box>
               </Box>
+
             </Box>
           </Container>
         </Box>
