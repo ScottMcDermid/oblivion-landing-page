@@ -11,7 +11,7 @@ import {
   Typography,
 } from '@mui/material';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { GiRunningShoe } from 'react-icons/gi';
+import { GiRunningShoe, GiScrollQuill } from 'react-icons/gi';
 import theme from '@/app/theme';
 
 export default function Home() {
@@ -127,6 +127,15 @@ export default function Home() {
                     className="w-48 rounded-xl px-6 py-2"
                   >
                     <img src="/icons/wayshrine.png" alt="" width={24} height={24} style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8 }} /> Wayshrine
+                  </Button>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="large"
+                    href="https://census.oblivion.tools"
+                    className="w-48 rounded-xl px-6 py-2"
+                  >
+                    <GiScrollQuill style={{ display: 'inline-block', verticalAlign: 'middle', marginRight: 8, fontSize: 24 }} /> Census
                   </Button>
                 </Box>
               </Box>
